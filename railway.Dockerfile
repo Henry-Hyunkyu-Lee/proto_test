@@ -161,6 +161,9 @@ RUN echo "server { \
     } \
 }" > /etc/nginx/sites-available/default
 
+# Ensure the server block is enabled
+RUN ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+
 RUN echo '#!/bin/bash\n\
 set -e\n\
 \n\
@@ -177,7 +180,7 @@ sed -i "s/PRERENDER_TOKEN_PLACEHOLDER/$PRERENDER_TOKEN/g" /etc/nginx/sites-avail
 # Ensure nginx listens on provided PORT (fallback 8000)\n\
 export PORT="${PORT:-8000}"\n\
 echo "Using PORT=$PORT for nginx listen"\n\
-sed -i "s/listen 8000;/listen ${PORT};/g" /etc/nginx/sites-available/default\n\
+sed -i "s/listen 8000;/listen 0.0.0.0:${PORT};/g" /etc/nginx/sites-available/default\n\
 \n\
 # Start backend API server\n\
 cd /deployment/services\n\
