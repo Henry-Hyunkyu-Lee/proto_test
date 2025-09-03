@@ -174,6 +174,11 @@ fi\n\
 # Replace the token placeholder in nginx config\n\
 sed -i "s/PRERENDER_TOKEN_PLACEHOLDER/$PRERENDER_TOKEN/g" /etc/nginx/sites-available/default\n\
 \n\
+# Ensure nginx listens on provided PORT (fallback 8000)\n\
+export PORT="${PORT:-8000}"\n\
+echo "Using PORT=$PORT for nginx listen"\n\
+sed -i "s/listen 8000;/listen ${PORT};/g" /etc/nginx/sites-available/default\n\
+\n\
 # Start backend API server\n\
 cd /deployment/services\n\
 if [ -f "api/routes.py" ]; then\n\
