@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>샘플 리포트 | 마이진케어</title>
     <meta name="description" content="유전체 기반 개인 맞춤 체중관리 보조제 샘플 리포트" />
+    <!-- Style tag (tailwindcss) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = { theme: { extend: { colors: { brand: { start: '#2563eb', end: '#16a34a' }}}}};
@@ -14,6 +15,15 @@
       .card { border-radius: var(--radius); border: 1px solid rgba(0,0,0,0.08); }
       .btn-primary { background-image: linear-gradient(to right, #2563eb, #16a34a); }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-05EYB6JZH8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-05EYB6JZH8');
+    </script>
   </head>
   <body class="min-h-screen bg-gray-50 text-gray-900">
     <!-- Header -->
