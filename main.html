@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>마이진케어 | 맞춤 체중관리 보조제 추천</title>
+    <meta name="description" content="유전체/유전 데이터와 실험·AI 분석을 기반으로 맞춤형 체중관리 보조제를 추천합니다." />
+    <link rel="icon" href="app/public/favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: { start: '#2563eb', end: '#16a34a' }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root { --radius: 0.5rem; }
+      .card { border-radius: var(--radius); border: 1px solid rgba(0,0,0,0.08); }
+      .btn-primary { background-image: linear-gradient(to right, #2563eb, #16a34a); }
+      .badge { border-radius: 9999px; padding: 0.2rem 0.6rem; font-size: 0.75rem; }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 text-gray-900">
+    <!-- Header -->
+    <header class="bg-white/90 backdrop-blur border-b sticky top-0 z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <div class="w-8 h-8 rounded-lg bg-gradient-to-r from-brand-start to-brand-end flex items-center justify-center text-white font-bold">M</div>
+            <h1 class="text-xl sm:text-2xl font-bold">마이진케어</h1>
+            <span class="badge bg-gray-100 text-gray-700">MyGeneCare</span>
+          </div>
+          <a href="report.html" class="inline-flex items-center gap-2 px-4 py-2 border rounded-md hover:bg-gray-50">샘플 리포트 보기</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="relative overflow-hidden bg-gradient-to-r from-brand-start to-brand-end text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-24">
+        <div class="text-center">
+          <h2 class="text-3xl sm:text-5xl md:text-6xl font-extrabold leading-tight">
+            정말 많은 체중관리 보조제를 먹어봤지만<br class="hidden md:block" />
+            효과가 없으셨나요?
+          </h2>
+          <p class="mt-6 text-lg sm:text-2xl text-blue-100">
+            유전체/유전 데이터와 대규모 실험·AI 분석으로,<br class="hidden sm:block" />
+            나에게 맞는 체중관리 보조제를 선택하세요.
+          </p>
+          <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="https://forms.gle/GFZGQEnCPFVLZyc57" target="_blank" rel="noopener noreferrer" class="px-8 py-4 text-lg font-semibold rounded-md text-blue-600 bg-white hover:bg-blue-50">무료 상담 신청하기</a>
+            <a href="report.html" class="px-8 py-4 text-lg font-semibold rounded-md border border-white/80 text-white hover:bg-white hover:text-blue-600">샘플 리포트 보기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Problems -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-2xl sm:text-3xl font-bold">이런 고민, 있으시죠?</h3>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <div class="flex items-center gap-2 mb-3 text-red-600 font-semibold">❌ 효과 없음</div>
+            <p class="text-gray-600">광고만 믿고 여러 보조제를 시도했지만 눈에 띄는 변화가 없음</p>
+          </div>
+          <div class="card p-6">
+            <div class="flex items-center gap-2 mb-3 text-red-600 font-semibold">⚠️ 불확실성</div>
+            <p class="text-gray-600">내 몸에 어떤 성분이 맞는지 확신이 없어 불안</p>
+          </div>
+          <div class="card p-6">
+            <div class="flex items-center gap-2 mb-3 text-red-600 font-semibold">⏱️ 시간·비용 낭비</div>
+            <p class="text-gray-600">직접 다 먹어보며 비교하기엔 시간과 비용이 너무 큼</p>
+          </div>
+        </div>
+        <div class="mt-10 bg-blue-50 rounded-lg p-6 sm:p-8 text-center">
+          <p class="text-gray-700 mb-2">👉 사람마다 유전적 특성이 달라, 같은 보조제라도 효과가 다릅니다.</p>
+          <p class="text-xl font-semibold text-blue-700">🔑 해결책: 데이터 · 실험 · AI 기반 맞춤 추천</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Solution / Features -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-2xl sm:text-3xl font-bold">마이진케어는 다릅니다</h3>
+          <p class="text-blue-600 font-semibold mt-2">"실제로 시험해보고, 데이터로 맞춘 나만의 체중관리 보조제 추천"</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="card p-6 text-center">
+            <div class="mx-auto w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">🧬</div>
+            <h4 class="font-semibold mb-2">유전체 검사</h4>
+            <p class="text-gray-600 text-sm">개인 유전적 특성을 파악하여 근본 원인을 확인</p>
+          </div>
+          <div class="card p-6 text-center">
+            <div class="mx-auto w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">🧪</div>
+            <h4 class="font-semibold mb-2">생생체모델 실험</h4>
+            <p class="text-gray-600 text-sm">20종 체중관리 기능성 원료 직접 시험</p>
+          </div>
+          <div class="card p-6 text-center">
+            <div class="mx-auto w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-4">🔬</div>
+            <h4 class="font-semibold mb-2">AI 분석</h4>
+            <p class="text-gray-600 text-sm">최신 문헌·임상 데이터와 AI 분석 결합</p>
+          </div>
+          <div class="card p-6 text-center">
+            <div class="mx-auto w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">✅</div>
+            <h4 class="font-semibold mb-2">맞춤 추천</h4>
+            <p class="text-gray-600 text-sm">개인 TOP3 추천과 예상 감량 폭 제시</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process (detailed) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-2xl sm:text-3xl font-bold">서비스 프로세스</h3>
+          <p class="text-gray-600">간단한 4단계로 나만의 맞춤 보조제를 찾아보세요</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="card p-6">
+            <p class="text-xs text-gray-500">Step 1</p>
+            <h4 class="font-semibold mb-2">🧬 유전체 검사</h4>
+            <p class="text-gray-600 text-sm">제휴된 DTC 유전자 검사로 고객님의 대사·비만 관련 유전자 특성 확인</p>
+          </div>
+          <div class="card p-6">
+            <p class="text-xs text-gray-500">Step 2</p>
+            <h4 class="font-semibold mb-2">🧪 맞춤형 생체모델 시험</h4>
+            <p class="text-gray-600 text-sm">개인별 유전자 특성을 반영한 생체모델에서 실제로 20종 체중관리 원료 비교시험</p>
+          </div>
+          <div class="card p-6">
+            <p class="text-xs text-gray-500">Step 3</p>
+            <h4 class="font-semibold mb-2">🔬 데이터+AI 분석</h4>
+            <p class="text-gray-600 text-sm">시험 결과 + 최신 문헌·임상 데이터를 AI가 통합 분석 → 최적 보조제 및 체중감량 예측치 도출</p>
+          </div>
+          <div class="card p-6">
+            <p class="text-xs text-gray-500">Step 4</p>
+            <h4 class="font-semibold mb-2">✅ 개인화된 추천 가이드</h4>
+            <p class="text-gray-600 text-sm">고객님의 유전자와 분석 데이터를 기반으로 맞춤 조합 보조제를 구독 형태로 매월 배송</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing (match original) -->
+    <section class="py-16 bg-gradient-to-r from-blue-50 to-green-50" id="consult">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-2xl sm:text-3xl font-bold">합리적인 가격</h3>
+          <p class="text-gray-600">마이진케어는 합리적인 가격으로 시작합니다</p>
+        </div>
+        <div class="card border-2 border-blue-200 overflow-hidden max-w-2xl mx-auto">
+          <div class="px-6 py-6 text-center bg-gradient-to-r from-blue-600 to-green-600 text-white">
+            <h4 class="text-2xl">월 구독 서비스</h4>
+            <div class="text-4xl font-bold mt-2">₩40,000 <span class="text-sm font-normal">(VAT 포함)</span></div>
+          </div>
+          <div class="p-8">
+            <div class="space-y-3 mb-6">
+              <div class="flex items-center gap-3"><span>✅</span><span>유전자 검사 (첫 달)</span></div>
+              <div class="flex items-center gap-3"><span>✅</span><span>맞춤 보조제 조합 추천</span></div>
+              <div class="flex items-center gap-3"><span>✅</span><span>맞춤 보조제 매월 배송</span></div>
+              <div class="flex items-center gap-3"><span>✅</span><span>개인화된 리포트</span></div>
+              <div class="flex items-center gap-3"><span>✅</span><span>지속적인 모니터링</span></div>
+            </div>
+            <div class="bg-blue-50 rounded-lg p-4 mb-6">
+              <h5 class="font-semibold text-blue-900 mb-2">첫 달 특별 혜택</h5>
+              <div class="space-y-2 text-blue-800">
+                <div class="flex items-center gap-2"><span>⭐</span><span>유전자 검사 키트</span></div>
+                <div class="flex items-center gap-2"><span>⭐</span><span>상세 분석 리포트</span></div>
+                <div class="flex items-center gap-2"><span>⭐</span><span>개인 맞춤 상담</span></div>
+              </div>
+            </div>
+            <a href="https://forms.gle/GFZGQEnCPFVLZyc57" target="_blank" rel="noopener noreferrer" class="w-full inline-flex justify-center px-4 py-3 text-white rounded-md btn-primary text-lg">무료 상담 신청하기</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Differentiation (왜 다른가요) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-2xl sm:text-3xl font-bold">왜 다른가요?</h3>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+          <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="text-3xl mb-3">🧪</div>
+            <h4 class="font-semibold mb-1">실제 시험 데이터</h4>
+            <p class="text-sm text-gray-600">설문/후기와 차별화</p>
+          </div>
+          <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="text-3xl mb-3">🧬</div>
+            <h4 class="font-semibold mb-1">20종 원료료 비교</h4>
+            <p class="text-sm text-gray-600">기능성 원료 비교시험</p>
+          </div>
+          <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="text-3xl mb-3">🔬</div>
+            <h4 class="font-semibold mb-1">AI 예측 모델</h4>
+            <p class="text-sm text-gray-600">체중감량 효과 수치 제공</p>
+          </div>
+          <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="text-3xl mb-3">🧑‍🔬</div>
+            <h4 class="font-semibold mb-1">합리적 가격</h4>
+            <p class="text-sm text-gray-600">월 4만원 구독 서비스</p>
+          </div>
+          <div class="card p-6 text-center hover:shadow-lg transition-shadow">
+            <div class="text-3xl mb-3">✅</div>
+            <h4 class="font-semibold mb-1">안전성 확보</h4>
+            <p class="text-sm text-gray-600">식약처 인정 원료만 사용</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Scientific Basis -->
+    <section class="py-16 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-2xl sm:text-3xl font-bold">과학적 근거</h3>
+          <p class="text-gray-600 mt-2">데이터와 문헌, 그리고 시뮬레이션·AI 분석으로 결과의 신뢰도를 높입니다.</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <h4 class="font-semibold mb-2">글로벌 표준</h4>
+            <p class="text-sm text-gray-700">글로벌 제약사와 FDA도 활용하는 수준의 개인 유전자 정보 반영 생체모델 기반</p>
+          </div>
+          <div class="card p-6">
+            <h4 class="font-semibold mb-2">인정된 원료</h4>
+            <p class="text-sm text-gray-700">국내 식약처에서 인정된 체중감량 기능성 원료 20종 대상</p>
+          </div>
+          <div class="card p-6">
+            <h4 class="font-semibold mb-2">데이터 기반</h4>
+            <p class="text-sm text-gray-700">최신 문헌·임상 데이터 + AI 분석 결합으로 데이터로 입증된 맞춤 서비스</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (static placeholders) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h3 class="text-2xl sm:text-3xl font-bold">✨ 사용자 후기</h3>
+        </div>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="card p-6">
+            <div class="flex items-center justify-between mb-2">
+              <p class="font-semibold">김○○ (30대)</p>
+              <span class="text-yellow-500">★★★★★</span>
+            </div>
+            <p class="text-gray-600 text-sm">"설문만으로 추천하는 서비스와 달리, 실험 데이터 기반 추천이라 훨씬 믿음이 갔습니다."</p>
+            <span class="inline-block bg-green-100 text-green-700 font-semibold text-xs px-3 py-1 rounded-full mt-2 border border-green-200">3.2kg (3개월) 감량 성공</span>
+          </div>
+          <div class="card p-6">
+            <div class="flex items-center justify-between mb-2">
+              <p class="font-semibold">이○○ (40대)</p>
+              <span class="text-yellow-500">★★★★☆</span>
+            </div>
+            <p class="text-gray-600 text-sm">"20종 원료를 다 먹어볼 필요 없이, 나에게 맞는 TOP3와 체중감량 예측치를 받아보니 안심이 됐어요."</p>
+            <span class="inline-block bg-green-100 text-green-700 font-semibold text-xs px-3 py-1 rounded-full mt-2 border border-green-200">2.8kg (2개월) 감량 성공</span>
+          </div>
+          <div class="card p-6">
+            <div class="flex items-center justify-between mb-2">
+              <p class="font-semibold">박○○ (20대)</p>
+              <span class="text-yellow-500">★★★★★</span>
+            </div>
+            <p class="text-gray-600 text-sm">"내 유전자와 맞춤 분석 결과라서, 꾸준히 먹을 자신이 생겼습니다."</p>
+            <span class="inline-block bg-green-100 text-green-700 font-semibold text-xs px-3 py-1 rounded-full mt-2 border border-green-200">4.1kg (4개월) 감량 성공</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-green-600 text-white">
+      <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">맞춤 체중관리 보조제, 전문가와 상담해보세요.</h2>
+        <div class="bg-white/10 backdrop-blur-sm rounded-lg p-6 mb-8">
+          <h3 class="text-lg font-semibold mb-4">상담 신청 프로세스</h3>
+          <div class="grid md:grid-cols-3 gap-4 text-sm">
+            <div class="flex items-center gap-2"><div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs font-bold">1</div><span>간단 정보 입력 후 상담 신청</span></div>
+            <div class="flex items-center gap-2"><div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs font-bold">2</div><span>1-2일 내 전문 상담원 연락</span></div>
+            <div class="flex items-center gap-2"><div class="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center text-xs font-bold">3</div><span>맞춤 조합 설명 후 진행 여부 결정</span></div>
+          </div>
+        </div>
+        <p class="text-xl mb-8 text-blue-100">무료 상담으로 나에게 맞는 준비인지 확인해보세요.</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="https://forms.gle/GFZGQEnCPFVLZyc57" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 text-lg rounded-md">무료 상담 신청하기</a>
+          <a href="report.html" class="px-8 py-4 border border-white text-white hover:bg-white hover:text-blue-600 text-lg rounded-md">샘플 리포트 미리보기</a>
+        </div>
+      </div>
+    </section>
+
+    
+    <!-- Footer (확장) -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center">
+          <div class="flex items-center justify-center space-x-2 mb-4">
+            <div class="w-8 h-8 bg-gradient-to-r from-blue-600 to-green-600 rounded-lg flex items-center justify-center">
+              <span class="text-white font-bold text-sm">M</span>
+            </div>
+            <h3 class="text-2xl font-bold">마이진케어</h3>
+          </div>
+          <p class="text-gray-400 mb-4">유전체·실험 데이터 기반 맞춤 체중관리 보조제 추천 서비스</p>
+          <div class="border-t border-gray-700 pt-4 mb-4">
+            <div class="space-y-2 text-sm text-gray-400">
+              <p class="font-semibold text-white">(주)제핏</p>
+              <div class="flex flex-col sm:flex-row sm:justify-center sm:space-x-6 space-y-1 sm:space-y-0">
+                <p>사업자등록번호: 179-87-01024</p>
+                <p>전화번호: 053-716-0816</p>
+                <p>이메일: info@zefit.co.kr</p>
+              </div>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500">© 2024 MyGeneCare by 제핏. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
