@@ -6,7 +6,7 @@
 
 ```
 proto_test/
-├── main.html    # 메인 랜딩 페이지
+├── index.html   # 메인 랜딩 페이지 (GitHub Pages 기본 파일)
 ├── report.html  # 개인 맞춤 분석 리포트 샘플 페이지
 ├── README.md    # 프로젝트 설명
 └── .gitignore   # Git 무시 파일 목록
@@ -14,7 +14,7 @@ proto_test/
 
 ## 🚀 주요 기능
 
-### 메인 페이지 (main.html)
+### 메인 페이지 (index.html)
 - 서비스 소개 및 특징
 - 사용자 후기 (감량 성공 사례 배지 포함)
 - FAQ 섹션
@@ -40,22 +40,41 @@ proto_test/
 
 ## 🌐 사용 방법
 
-1. **로컬에서 실행**:
+### 1. GitHub Pages로 배포 (추천)
+
+1. **저장소 생성 및 푸시**:
    ```bash
-   # 웹 브라우저에서 직접 HTML 파일 열기
-   open main.html  # macOS
-   start main.html # Windows
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git branch -M main
+   git remote add origin https://github.com/username/repository-name.git
+   git push -u origin main
    ```
 
-2. **정적 웹 호스팅**:
-   - GitHub Pages
-   - Netlify
-   - Vercel
-   - 기타 정적 파일 호스팅 서비스
+2. **GitHub Pages 활성화**:
+   - GitHub 저장소 설정 → Pages
+   - Source: Deploy from a branch
+   - Branch: main / (root)
+   - 저장 후 몇 분 대기
+
+3. **접속**: `https://username.github.io/repository-name`
+
+### 2. 로컬에서 실행
+```bash
+# 웹 브라우저에서 직접 HTML 파일 열기
+open index.html  # macOS
+start index.html # Windows
+```
+
+### 3. 기타 정적 호스팅
+- Netlify: 드래그 앤 드롭으로 간편 배포
+- Vercel: GitHub 연동 자동 배포
+- Firebase Hosting: Google 플랫폼 활용
 
 ## 📱 주요 섹션
 
-### main.html
+### index.html
 - **히어로 섹션**: 메인 제목과 서비스 소개
 - **특징 소개**: 개인 맞춤형 추천, 과학적 근거 기반
 - **사용자 후기**: 실제 감량 성공 사례와 별점 평가
